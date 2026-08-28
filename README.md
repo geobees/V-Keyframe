@@ -1,6 +1,10 @@
 # V-Keyframe
 
-<img src="./branding/geobees-labs-logo.png" alt="Geobees Labs" width="220" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./branding/geobees-labs-logo-on-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="./branding/geobees-labs-logo.png">
+  <img alt="Geobees Labs" src="./branding/geobees-labs-logo.png" width="220">
+</picture>
 
 **Turn any video into an archive of the moments worth keeping.**
 
