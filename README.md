@@ -1,6 +1,6 @@
 # V-Keyframe
 
-<img src="./branding/geobees-labs-logo.png" alt="Geobees Labs" width="220">
+<img src="./branding/geobees-labs-logo.png_1" alt="Geobees Labs" width="420">
 
 **Turn any video into an archive of the moments worth keeping.**
 
