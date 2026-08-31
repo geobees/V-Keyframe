@@ -1,10 +1,6 @@
 # V-Keyframe
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./branding/geobees-labs-logo_1.png">
-  <source media="(prefers-color-scheme: light)" srcset="./branding/geobees-labs-logo_1.png">
-  <img alt="Geobees Labs" src="./branding/geobees-labs-logo.png" width="220">
-</picture>
+<img src="./branding/geobees-labs-logo.png" alt="Geobees Labs" width="220">
 
 **Turn any video into an archive of the moments worth keeping.**
 
@@ -43,6 +39,9 @@ Three sliders tune the detector to fit the video:
 - **Tunable automatic detection** — sample rate, hold time, and sensitivity adapt to any pacing, from slow lecture slides to fast-cut tutorials.
 - **Frame filters** — optionally skip near-blank/solid-color frames (fades, transitions), or restrict capture to single-toned frames (true grayscale, sepia, cyanotype, chalkboard-blue — anything dominated by one hue, regardless of how saturated it is).
 - **Manual capture** — scrub the video with native playback controls and grab any frame the automatic scan misses.
+- **Frame-accurate stepping** — step the playhead back/forward by 1 or 10 frames at a time, at a frame rate you set to match your footage — useful for landing precisely before marking an in/out point or grabbing a manual capture.
+- **In/out point trimming** — mark a start and end point on the video (like a rough in/out edit) so scanning only runs across the section you actually need, instead of the whole file.
+- **Export the marked section as video** — records the in/out selection back out as its own video file, using the browser's native recorder. Prefers MP4 when the browser supports recording it, and falls back to WebM (universally supported) otherwise. Since it's recording live playback rather than re-encoding a file, export takes roughly as long as the clip itself.
 - **On-device OCR** — each card's text is read locally (via Tesseract.js) and saved alongside the image, with no server round-trip.
 - **Batch / queue mode** — drop several videos at once; each is scanned in turn automatically, with cards tagged by source video.
 - **Direct-to-folder export** — using the File System Access API, cards are written straight to a chosen folder as they're found. No zip step, no waiting at the end. (Chromium-based browsers only; other browsers fall back to a zip download.)
@@ -50,6 +49,7 @@ Three sliders tune the detector to fit the video:
 - **Configurable file naming** — number only, timecode only, or both, so exported files always correlate back to their moment in the source video.
 - **Single-document PDF export** — the whole collection as one PDF, with a caption and OCR text under every image, and an optional "fit to page" mode for a uniform, print-ready layout.
 - **Resumable sessions** — captured cards persist locally via IndexedDB. An accidental refresh or closed tab doesn't lose the work; reopen the page and choose to restore or discard.
+- **YouTube-friendly workflow** — since the app works on local video files, it links out to a quick browser-based downloader as a way to save a YouTube video to disk first, then drop the download straight in. No install required for that step either.
 
 ## Getting started
 
@@ -90,8 +90,8 @@ The `branding/` folder includes the Geobees Labs logo in a few forms:
 
 | File | Use |
 |---|---|
-| `geobees-labs-logo.png` | Full logo (icon + wordmark), transparent background — for light backgrounds (this README, docs) |
-| `geobees-labs-logo-on-dark.png` | Full logo, flattened onto the app's dark background color — for dark-mode contexts or a GitHub social preview image |
+| `geobees-labs-logo.png` | Full logo (icon + wordmark), on the app's dark background color — the primary logo, used throughout this README and docs |
+| `geobees-labs-logo-on-dark.png` | Same artwork, kept for anywhere a dark-background asset is referenced directly (e.g. a GitHub social preview image) |
 | `geobees-labs-icon.png` | Icon mark only, transparent background — for favicons, avatars, or anywhere the wordmark would be too small to read |
 
 ## Contributing
