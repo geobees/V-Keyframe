@@ -1,0 +1,1597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>V-Keyframe — Video Card Archiver</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;1,500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/5.0.4/tesseract.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<style>
+  :root{
+    --void: #05070c;
+    --panel: #0b111c;
+    --panel-raised: #101929;
+    --ink: #dbe6f2;
+    --ink-soft: #7488a3;
+    --blue: #2f6fed;
+    --blue-deep: #1c4bb3;
+    --ice: #8fd8ff;
+    --ice-soft: #c9ecff;
+    --line: rgba(143,216,255,0.14);
+    --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 12px 32px -14px rgba(47,111,237,0.35);
+    --radius: 3px;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:
+      radial-gradient(ellipse 900px 500px at 12% -6%, rgba(47,111,237,0.16), transparent 60%),
+      radial-gradient(ellipse 700px 500px at 100% 10%, rgba(143,216,255,0.06), transparent 55%),
+      var(--void);
+    background-attachment:fixed;
+    color:var(--ink);
+    font-family:'Sora', sans-serif;
+    min-height:100vh;
+    line-height:1.5;
+  }
+  .noise{
+    position:fixed; inset:0; pointer-events:none; opacity:0.05; mix-blend-mode:overlay; z-index:0;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  .wrap{position:relative; z-index:1; max-width:1080px; margin:0 auto; padding:56px 28px 120px;}
+
+  header{margin-bottom:40px;}
+  .eyebrow{
+    font-family:'DM Mono', monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase;
+    color:var(--ice); display:flex; align-items:center; gap:10px; margin-bottom:14px;
+  }
+  .eyebrow img{ display:inline-block; }
+  h1{
+    font-family:'Sora', sans-serif; font-weight:700; font-size:clamp(32px,4.4vw,50px);
+    margin:0 0 10px; letter-spacing:-0.02em; color:#f2f7fc;
+  }
+  h1 em{font-family:'Cormorant Garamond', serif; font-style:italic; font-weight:500; color:var(--ice); letter-spacing:0;}
+  .sub{color:var(--ink-soft); font-size:15.5px; max-width:560px; margin:0;}
+
+  /* ---- Dropzone: signal tray ---- */
+  .tray{
+    position:relative; border:1.5px dashed rgba(143,216,255,0.28); border-radius:var(--radius);
+    background:var(--panel); padding:46px 32px; text-align:center; cursor:pointer;
+    transition:border-color .18s ease, background .18s ease;
+  }
+  .tray.drag{ border-color:var(--blue); background:#0d1830; }
+  .tray.has-video{ padding:20px 24px; text-align:left; cursor:default; }
+  .tray-icon{ width:34px; height:34px; margin:0 auto 16px; color:var(--ice); }
+  .tray-title{ font-family:'Sora', sans-serif; font-size:19px; font-weight:600; margin-bottom:4px; color:#f2f7fc;}
+  .tray-hint{ font-size:13.5px; color:var(--ink-soft); }
+  .tray input[type=file]{ display:none; }
+
+  .yt-hint{
+    margin-top:14px; font-size:12.5px; color:var(--ink-soft); text-align:center;
+  }
+  .yt-hint a{ color:var(--ice); text-decoration:none; border-bottom:1px dashed rgba(143,216,255,0.4); }
+  .yt-hint a:hover{ color:#f2f7fc; border-bottom-color:var(--ice); }
+
+  .video-row{ display:flex; flex-direction:column; align-items:stretch; gap:12px; }
+  .video-row video{ width:100%; max-width:100%; border-radius:2px; display:block; background:#000; border:1px solid var(--line); }
+  .video-row .meta-line{ display:flex; align-items:center; gap:16px; }
+  .video-meta{ flex:1; min-width:0; }
+  .video-meta .fname{ font-weight:600; font-size:14.5px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; color:#f2f7fc; }
+  .video-meta .fdetail{ font-family:'DM Mono', monospace; font-size:12px; color:var(--ink-soft); margin-top:3px; }
+  .swap-btn{ font-family:'DM Mono', monospace; font-size:11.5px; color:var(--ice); background:none; border:1px solid var(--line); padding:7px 12px; border-radius:2px; cursor:pointer; flex-shrink:0; }
+  .swap-btn:hover{ border-color:var(--blue); }
+
+  .manual-row{ display:flex; align-items:center; gap:14px; margin-top:16px; flex-wrap:wrap; }
+  .manual-hint{ font-size:12px; color:var(--ink-soft); }
+
+  .step-row{
+    display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap;
+    margin-top:16px; padding-top:16px; border-top:1px dashed var(--line);
+  }
+  .step-controls{ display:flex; gap:8px; }
+  .step-btn{ font-family:'DM Mono', monospace; padding:8px 14px; font-size:12.5px; letter-spacing:0.02em; }
+  .fps-control{ display:flex; align-items:center; gap:8px; }
+  .fps-control label{ font-size:12px; color:var(--ink-soft); }
+  .fps-control input{
+    width:64px; font-family:'DM Mono', monospace; font-size:12.5px; color:var(--ink);
+    background:var(--panel-raised); border:1px solid var(--line); border-radius:2px; padding:7px 8px;
+  }
+  .fps-control input:focus{ outline:none; border-color:var(--blue); }
+  .fps-hint{ font-size:11.5px; color:var(--ink-soft); }
+
+  .range-row{ margin-top:18px; padding-top:16px; border-top:1px dashed var(--line); }
+  .range-controls{ display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:10px; }
+  .range-controls .btn{ padding:8px 14px; font-size:12px; }
+  .range-track{
+    position:relative; height:6px; background:var(--line); border-radius:3px; overflow:hidden; cursor:pointer;
+  }
+  .range-fill{
+    position:absolute; top:0; bottom:0; left:0; width:100%;
+    background:linear-gradient(90deg, var(--blue), var(--ice)); border-radius:3px;
+  }
+  .range-label{ font-family:'DM Mono', monospace; font-size:11.5px; color:var(--ink-soft); margin-top:8px; }
+  .range-label b{ color:var(--ice); font-weight:500; }
+
+  .clip-export-row{ display:flex; align-items:center; gap:14px; margin-top:16px; flex-wrap:wrap; }
+  .clip-export-hint{ font-size:12px; color:var(--ink-soft); }
+  .clip-progress-wrap{ margin-top:14px; max-width:420px; }
+  .clip-progress-wrap .progress-text{ align-items:center; }
+  .clip-progress-wrap .btn{ padding:3px 12px; font-size:11px; }
+  .video-row video.exporting{ pointer-events:none; opacity:0.85; }
+
+  .queue-panel{ margin-top:22px; background:var(--panel); border:1px solid var(--line); border-radius:var(--radius); padding:18px 22px; }
+  .queue-list{ display:flex; flex-direction:column; gap:8px; margin-top:12px; }
+  .queue-item{
+    display:flex; align-items:center; gap:12px; padding:9px 12px; border:1px solid var(--line); border-radius:2px;
+    background:var(--panel-raised); font-size:13px;
+  }
+  .queue-item .qdot{ width:7px; height:7px; border-radius:50%; background:var(--ink-soft); flex-shrink:0; }
+  .queue-item.active .qdot{ background:var(--blue); box-shadow:0 0 8px rgba(47,111,237,0.7); }
+  .queue-item.done .qdot{ background:var(--ice); }
+  .queue-item .qname{ flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; color:#c7d6e6; }
+  .queue-item .qstatus{ font-family:'DM Mono', monospace; font-size:11px; color:var(--ink-soft); flex-shrink:0; }
+  .queue-item .qremove{ background:none; border:none; color:var(--ink-soft); cursor:pointer; font-size:15px; line-height:1; flex-shrink:0; }
+  .queue-item .qremove:hover{ color:#ff6b5e; }
+
+  .restore-banner{
+    display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap;
+    background:var(--panel); border:1px solid rgba(143,216,255,0.3); border-radius:var(--radius);
+    padding:14px 20px; margin-bottom:22px;
+  }
+  .restore-banner span{ font-size:13.5px; color:#c7d6e6; }
+  .restore-actions{ display:flex; gap:10px; flex-shrink:0; }
+
+  /* ---- Controls panel ---- */
+  .panel{
+    margin-top:22px; background:var(--panel); border:1px solid var(--line); border-radius:var(--radius);
+    padding:22px 24px; box-shadow:var(--shadow);
+  }
+  .panel-label{ font-family:'DM Mono', monospace; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:var(--ink-soft); margin-bottom:16px; }
+  .controls-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+  .ctrl label{ display:flex; justify-content:space-between; font-size:13px; margin-bottom:8px; color:#c7d6e6; }
+  .ctrl label .val{ font-family:'DM Mono', monospace; color:var(--ice); font-weight:500; }
+  .ctrl input[type=range]{
+    width:100%; accent-color:var(--blue); height:3px;
+  }
+  .ctrl .desc{ font-size:11.5px; color:var(--ink-soft); margin-top:6px; line-height:1.4; }
+
+  .dest-row{ display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
+  .dest-status{ font-family:'DM Mono', monospace; font-size:12px; color:var(--ink-soft); }
+  .dest-status.set{ color:var(--ice); }
+  .dest-fallback{ margin-top:10px; font-size:12px; color:#ffb066; background:rgba(255,176,102,0.08); border:1px solid rgba(255,176,102,0.25); padding:9px 12px; border-radius:2px; }
+  .select{
+    width:100%; font-family:'DM Mono', monospace; font-size:12.5px; color:var(--ink);
+    background:var(--panel-raised); border:1px solid var(--line); border-radius:2px; padding:9px 10px;
+    appearance:none; cursor:pointer;
+  }
+  .select:focus{ outline:none; border-color:var(--blue); }
+
+  .check-label{ display:flex; align-items:center; gap:8px; cursor:pointer; }
+  .check-label input[type=checkbox]{ accent-color:var(--blue); width:15px; height:15px; cursor:pointer; }
+
+  .run-row{ display:flex; align-items:center; gap:14px; margin-top:24px; }
+  .btn{
+    font-family:'DM Mono', monospace; font-size:13px; letter-spacing:0.02em;
+    padding:11px 22px; border-radius:2px; border:none; cursor:pointer; font-weight:500;
+    display:inline-flex; align-items:center; gap:8px; transition:transform .12s ease, background .15s ease, box-shadow .15s ease;
+  }
+  .btn-primary{ background:var(--blue); color:#f2f7fc; box-shadow:0 0 0 rgba(47,111,237,0); }
+  .btn-primary:hover{ background:var(--blue-deep); box-shadow:0 0 22px rgba(47,111,237,0.45); }
+  .btn-primary:disabled{ background:#1a2333; color:#4a5872; cursor:not-allowed; box-shadow:none; }
+  .btn-ghost{ background:transparent; color:var(--ink); border:1px solid var(--line); }
+  .btn-ghost:hover{ border-color:var(--ice); color:var(--ice); }
+  .btn:active{ transform:scale(0.98); }
+
+  .progress-wrap{ flex:1; }
+  .progress-track{ height:6px; background:var(--line); border-radius:3px; overflow:hidden; }
+  .progress-fill{ height:100%; background:linear-gradient(90deg, var(--blue), var(--ice)); width:0%; transition:width .15s linear; box-shadow:0 0 10px rgba(47,111,237,0.6); }
+  .progress-text{ font-family:'DM Mono', monospace; font-size:11.5px; color:var(--ink-soft); margin-top:6px; display:flex; justify-content:space-between; }
+
+  /* ---- Live preview strip ---- */
+  .live{ display:flex; gap:14px; margin-top:18px; align-items:center; }
+  .live canvas{ width:96px; height:54px; border-radius:2px; border:1px solid var(--line); background:#000; }
+  .live-status{ font-family:'DM Mono', monospace; font-size:12px; color:var(--ink-soft); }
+  .live-status b{ color:var(--ice); }
+
+  /* ---- Gallery ---- */
+  .gallery-head{ display:flex; align-items:baseline; justify-content:space-between; margin:44px 0 18px; }
+  .gallery-head h2{ font-family:'Sora', sans-serif; font-size:23px; font-weight:600; margin:0; color:#f2f7fc; }
+  .gallery-count{ font-family:'DM Mono', monospace; font-size:12px; color:var(--ink-soft); }
+
+  .empty-state{
+    border:1px solid var(--line); border-radius:var(--radius); padding:40px; text-align:center;
+    color:var(--ink-soft); font-size:13.5px; background:rgba(143,216,255,0.03);
+  }
+
+  .grid{
+    display:grid; grid-template-columns:repeat(auto-fill, minmax(210px,1fr)); gap:20px;
+  }
+  .card{
+    position:relative; background:var(--panel); border:1px solid var(--line); border-radius:2px;
+    box-shadow:var(--shadow); overflow:hidden; transition:transform .15s ease, border-color .15s ease;
+  }
+  .card:hover{ transform:translateY(-3px); border-color:rgba(143,216,255,0.35); }
+  .card .pin{
+    position:absolute; top:9px; left:9px; width:8px; height:8px; border-radius:50%;
+    background:var(--blue); box-shadow:0 0 0 3px rgba(47,111,237,0.25), 0 0 10px rgba(47,111,237,0.7); z-index:2;
+  }
+  .card img{ width:100%; display:block; cursor:zoom-in; aspect-ratio:16/9; object-fit:cover; background:#050810; }
+  .card .tag{
+    display:flex; justify-content:space-between; align-items:center; padding:9px 11px;
+    border-top:1px dashed var(--line);
+  }
+  .card .tag .ts{ font-family:'DM Mono', monospace; font-size:12px; color:var(--ice); font-weight:500; }
+  .card .remove{
+    background:none; border:none; color:var(--ink-soft); cursor:pointer; font-size:15px; line-height:1;
+    padding:2px 4px; border-radius:2px;
+  }
+  .card .remove:hover{ color:#ff6b5e; }
+
+  .ocr-toggle{
+    font-family:'DM Mono', monospace; font-size:11px; color:var(--ice); background:none; border:none;
+    cursor:pointer; padding:0 11px 9px; text-align:left; opacity:0.85;
+  }
+  .ocr-toggle:hover{ opacity:1; }
+  .ocr-text{
+    display:none; font-size:12px; color:var(--ink-soft); background:rgba(143,216,255,0.04);
+    border-top:1px dashed var(--line); padding:9px 11px; max-height:130px; overflow-y:auto;
+    white-space:pre-wrap; line-height:1.5;
+  }
+  .ocr-text.open{ display:block; }
+
+  /* ---- Lightbox ---- */
+  .lightbox{
+    position:fixed; inset:0; background:rgba(2,4,8,0.94); z-index:50; display:none;
+    align-items:center; justify-content:center; padding:40px; flex-direction:column; gap:14px;
+  }
+  .lightbox.open{ display:flex; }
+  .lightbox img{ max-width:92vw; max-height:78vh; border-radius:2px; box-shadow:0 20px 70px rgba(47,111,237,0.25); border:1px solid var(--line); }
+  .lightbox .lb-meta{ color:var(--ice-soft); font-family:'DM Mono', monospace; font-size:12.5px; }
+  .lightbox .lb-close{
+    position:absolute; top:22px; right:28px; color:var(--ice-soft); background:none; border:none; font-size:26px; cursor:pointer;
+  }
+
+  .footer-note{ margin-top:50px; font-size:12.5px; color:var(--ink-soft); border-top:1px solid var(--line); padding-top:18px; }
+
+  @media (max-width:640px){
+    .controls-grid{ grid-template-columns:1fr; }
+    .meta-line{ flex-direction:column; align-items:flex-start; gap:8px; }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ transition:none !important; }
+  }
+</style>
+</head>
+<body>
+<div class="noise"></div>
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow"><img src="data:image/png;base64,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" alt="" style="width:24px;height:24px;vertical-align:-6px;margin-right:9px;">Geobees Labs · local &amp; offline — nothing leaves your browser</div>
+    <h1>V<em>-</em>Keyframe</h1>
+    <p class="sub">Drop in a video. It watches for still frames — the diagram cards, slides, and static panels — and pins the ones it hasn't seen before to a collection you can export. Compression level — PNG: lossless, JPEG: 90%, WebP: 94.2%.</p>
+  </header>
+
+  <div class="restore-banner" id="restoreBanner" style="display:none;">
+    <span id="restoreText"></span>
+    <div class="restore-actions">
+      <button class="btn btn-primary" id="restoreBtn" type="button">Restore</button>
+      <button class="btn btn-ghost" id="discardBtn" type="button">Discard</button>
+    </div>
+  </div>
+
+  <div class="tray" id="tray">
+    <input type="file" id="fileInput" accept="video/*" multiple>
+    <div id="trayEmpty">
+      <svg class="tray-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 7a2 2 0 012-2h6l2 2h4a2 2 0 012 2v7a2 2 0 01-2 2H6a2 2 0 01-2-2V7z"/><circle cx="12" cy="13" r="3"/></svg>
+      <div class="tray-title">Drop a video file here</div>
+      <div class="tray-hint">or click to browse — MP4, WebM, MOV, anything your browser can play. Drop several at once to queue them.</div>
+    </div>
+    <div id="trayFilled" style="display:none;">
+      <div class="video-row">
+        <video id="preview" muted playsinline controls></video>
+        <div class="meta-line">
+          <div class="video-meta">
+            <div class="fname" id="fname">—</div>
+            <div class="fdetail" id="fdetail">—</div>
+          </div>
+          <button class="swap-btn" id="swapBtn" type="button">Choose different file</button>
+        </div>
+      </div>
+      <div class="manual-row">
+        <button class="btn btn-ghost" id="manualCaptureBtn" type="button">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3" fill="currentColor" stroke="none"/></svg>
+          Capture this frame
+        </button>
+        <span class="manual-hint">Scrub the video above, pause on anything the auto-scan missed, then capture it directly.</span>
+      </div>
+
+      <div class="step-row">
+        <div class="step-controls">
+          <button class="btn btn-ghost step-btn" id="stepBack10Btn" type="button" title="Back 10 frames">◀◀ 10</button>
+          <button class="btn btn-ghost step-btn" id="stepBack1Btn" type="button" title="Back 1 frame">◀ 1</button>
+          <button class="btn btn-ghost step-btn" id="stepFwd1Btn" type="button" title="Forward 1 frame">1 ▶</button>
+          <button class="btn btn-ghost step-btn" id="stepFwd10Btn" type="button" title="Forward 10 frames">10 ▶▶</button>
+        </div>
+        <div class="fps-control">
+          <label for="fpsInput">Frame rate</label>
+          <input type="number" id="fpsInput" min="1" max="240" step="0.01" value="30">
+          <span class="fps-hint">fps — set this to match your footage for accurate stepping</span>
+        </div>
+      </div>
+
+      <div class="range-row">
+        <div class="range-controls">
+          <button class="btn btn-ghost" id="markInBtn" type="button">Set in point</button>
+          <button class="btn btn-ghost" id="markOutBtn" type="button">Set out point</button>
+          <button class="btn btn-ghost" id="resetRangeBtn" type="button">Full video</button>
+        </div>
+        <div class="range-track" id="rangeTrack">
+          <div class="range-fill" id="rangeFill"></div>
+        </div>
+        <div class="range-label" id="rangeLabel">Scanning the full video</div>
+
+        <div class="clip-export-row">
+          <button class="btn btn-ghost" id="exportClipBtn" type="button">Export full video as clip</button>
+          <span class="clip-export-hint">Records the selection back out as a video file — takes as long as the clip itself to export.</span>
+        </div>
+        <div class="clip-progress-wrap" id="clipProgressWrap" style="display:none;">
+          <div class="progress-track"><div class="progress-fill" id="clipProgressFill"></div></div>
+          <div class="progress-text">
+            <span id="clipProgressLabel">0:00 / 0:00</span>
+            <button class="btn btn-ghost" id="cancelClipBtn" type="button">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="yt-hint" id="ytHint">
+    Have a YouTube link instead? Save it as a file first at
+    <a href="https://ytdownloader.io/" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">ytdownloader.io</a>,
+    then drop the download here — nothing needs installing.
+  </div>
+
+  <div class="queue-panel" id="queuePanel" style="display:none;">
+    <div class="panel-label" style="margin-bottom:0;">Up next <span id="queueCount"></span></div>
+    <div class="queue-list" id="queueList"></div>
+    <div class="run-row" style="margin-top:14px;">
+      <button class="btn btn-ghost" id="skipBtn" type="button" style="display:none;">Skip to next video</button>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-label">Destination</div>
+    <div class="dest-row">
+      <button class="btn btn-ghost" id="folderBtn" type="button">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7a2 2 0 012-2h4l2 2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V7z"/></svg>
+        Choose folder…
+      </button>
+      <span class="dest-status" id="folderStatus">Not set — cards stay in the browser until you download a zip</span>
+    </div>
+    <div class="dest-fallback" id="folderFallback" style="display:none;">
+      Your browser can't write straight to a folder, so cards are kept in-browser — use <b>Download collection</b> below to get a zip.
+    </div>
+
+    <div class="panel-label" style="margin-top:24px;">Capture settings</div>
+    <div class="controls-grid">
+      <div class="ctrl">
+        <label>Sample rate <span class="val" id="valInterval">0.5s</span></label>
+        <input type="range" id="interval" min="0.2" max="2" step="0.1" value="0.5">
+        <div class="desc">How often to check the frame. Lower catches quick cuts; higher is faster to process.</div>
+      </div>
+      <div class="ctrl">
+        <label>Hold time <span class="val" id="valStable">1.2s</span></label>
+        <input type="range" id="stable" min="0.4" max="3" step="0.1" value="1.2">
+        <div class="desc">How long a frame must stay still before it counts as a card, not a transition.</div>
+      </div>
+      <div class="ctrl">
+        <label>Sensitivity <span class="val" id="valThresh">medium</span></label>
+        <input type="range" id="thresh" min="1" max="9" step="1" value="5">
+        <div class="desc">How different a new frame must look to count as a new card.</div>
+      </div>
+    </div>
+
+    <div class="controls-grid" style="margin-top:22px;">
+      <div class="ctrl">
+        <label class="check-label"><input type="checkbox" id="skipBlankToggle" checked> Skip near-blank frames</label>
+        <div class="desc">Ignores fades, transitions, and mostly empty or solid-color frames so they never get captured as cards.</div>
+      </div>
+      <div class="ctrl">
+        <label class="check-label"><input type="checkbox" id="monoOnlyToggle"> Monochrome only</label>
+        <div class="desc">Only captures single-toned frames — true grayscale, but also sepia, cyanotype, or a chalkboard-blue tint — and skips frames with a genuine mix of colors.</div>
+      </div>
+    </div>
+
+    <div class="controls-grid" style="margin-top:22px;">
+      <div class="ctrl">
+        <label>Format</label>
+        <select id="format" class="select">
+          <option value="image/png">PNG — lossless</option>
+          <option value="image/jpeg">JPEG — smaller files</option>
+          <option value="image/webp">WebP — smaller, sharp</option>
+        </select>
+        <div class="desc">PNG is best for text-heavy diagrams; JPEG/WebP save space.</div>
+      </div>
+      <div class="ctrl" id="qualityCtrl" style="display:none;">
+        <label>Quality <span class="val" id="valQuality">0.92</span></label>
+        <input type="range" id="quality" min="0.5" max="1" step="0.02" value="0.92">
+        <div class="desc">Higher keeps small text and lines crisp; lower shrinks the file.</div>
+      </div>
+      <div class="ctrl">
+        <label>File naming</label>
+        <select id="naming" class="select">
+          <option value="both">Number + timecode</option>
+          <option value="number">Number only</option>
+          <option value="timecode">Timecode only</option>
+        </select>
+        <div class="desc">Timecode lets you match a card straight back to its moment in the source video.</div>
+      </div>
+      <div class="ctrl">
+        <label class="check-label"><input type="checkbox" id="ocrToggle"> Extract text (OCR)</label>
+        <div class="desc">Reads any text on each card in the background and saves it alongside the image. Runs locally, adds a little time per card.</div>
+      </div>
+    </div>
+
+    <div class="run-row">
+      <button class="btn btn-primary" id="runBtn" disabled>Start scanning</button>
+      <button class="btn btn-ghost" id="stopBtn" style="display:none;">Stop</button>
+      <div class="progress-wrap" id="progressWrap" style="display:none;">
+        <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+        <div class="progress-text"><span id="progressLabel">0:00 / 0:00</span><span id="progressPct">0%</span></div>
+      </div>
+    </div>
+
+    <div class="live" id="liveRow" style="display:none;">
+      <canvas id="liveCanvas" width="160" height="90"></canvas>
+      <div class="live-status" id="liveStatus">watching…</div>
+    </div>
+  </div>
+
+  <div class="gallery-head">
+    <h2>Collection</h2>
+    <span class="gallery-count" id="galleryCount">0 cards</span>
+  </div>
+  <div id="emptyState" class="empty-state">Cards you capture will appear here, each tagged with its timestamp in the source video.</div>
+  <div class="grid" id="grid"></div>
+
+  <div class="run-row" id="exportRow" style="display:none; margin-top:24px;">
+    <button class="btn btn-primary" id="downloadBtn">Download collection (.zip)</button>
+    <button class="btn btn-ghost" id="downloadPdfBtn">Download as PDF</button>
+    <label class="check-label" style="font-size:12.5px;"><input type="checkbox" id="pdfFitPage"> Fit to page (uniform size)</label>
+    <button class="btn btn-ghost" id="clearBtn">Clear all</button>
+  </div>
+
+  <div class="footer-note">
+    Everything runs in-browser via the HTML5 video and canvas APIs — the file is never uploaded anywhere. Turn on <b>Extract text (OCR)</b> above to have each card's text read locally and saved alongside the image, use <b>Capture this frame</b> while scrubbing to grab anything the automatic scan misses, drop multiple videos at once to queue them, or export the whole collection as a single <b>PDF</b> instead of a folder of images.
+  </div>
+</div>
+
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lbClose">&times;</button>
+  <img id="lbImg" src="" alt="">
+  <div class="lb-meta" id="lbMeta"></div>
+</div>
+
+<script>
+(function(){
+  const tray = document.getElementById('tray');
+  const fileInput = document.getElementById('fileInput');
+  const trayEmpty = document.getElementById('trayEmpty');
+  const trayFilled = document.getElementById('trayFilled');
+  const preview = document.getElementById('preview');
+  const fname = document.getElementById('fname');
+  const fdetail = document.getElementById('fdetail');
+  const swapBtn = document.getElementById('swapBtn');
+  const runBtn = document.getElementById('runBtn');
+  const stopBtn = document.getElementById('stopBtn');
+  const progressWrap = document.getElementById('progressWrap');
+  const progressFill = document.getElementById('progressFill');
+  const progressLabel = document.getElementById('progressLabel');
+  const progressPct = document.getElementById('progressPct');
+  const liveRow = document.getElementById('liveRow');
+  const liveCanvas = document.getElementById('liveCanvas');
+  const liveStatus = document.getElementById('liveStatus');
+  const grid = document.getElementById('grid');
+  const emptyState = document.getElementById('emptyState');
+  const galleryCount = document.getElementById('galleryCount');
+  const exportRow = document.getElementById('exportRow');
+  const downloadBtn = document.getElementById('downloadBtn');
+  const downloadPdfBtn = document.getElementById('downloadPdfBtn');
+  const pdfFitPage = document.getElementById('pdfFitPage');
+  const clearBtn = document.getElementById('clearBtn');
+  const lightbox = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lbImg');
+  const lbMeta = document.getElementById('lbMeta');
+  const lbClose = document.getElementById('lbClose');
+
+  const intervalSlider = document.getElementById('interval');
+  const stableSlider = document.getElementById('stable');
+  const threshSlider = document.getElementById('thresh');
+  const valInterval = document.getElementById('valInterval');
+  const valStable = document.getElementById('valStable');
+  const valThresh = document.getElementById('valThresh');
+
+  const formatSelect = document.getElementById('format');
+  const qualityCtrl = document.getElementById('qualityCtrl');
+  const qualitySlider = document.getElementById('quality');
+  const valQuality = document.getElementById('valQuality');
+  const namingSelect = document.getElementById('naming');
+  const ocrToggle = document.getElementById('ocrToggle');
+  const skipBlankToggle = document.getElementById('skipBlankToggle');
+  const monoOnlyToggle = document.getElementById('monoOnlyToggle');
+  const manualCaptureBtn = document.getElementById('manualCaptureBtn');
+  const stepBack10Btn = document.getElementById('stepBack10Btn');
+  const stepBack1Btn = document.getElementById('stepBack1Btn');
+  const stepFwd1Btn = document.getElementById('stepFwd1Btn');
+  const stepFwd10Btn = document.getElementById('stepFwd10Btn');
+  const fpsInput = document.getElementById('fpsInput');
+  const markInBtn = document.getElementById('markInBtn');
+  const markOutBtn = document.getElementById('markOutBtn');
+  const resetRangeBtn = document.getElementById('resetRangeBtn');
+  const rangeTrack = document.getElementById('rangeTrack');
+  const rangeFill = document.getElementById('rangeFill');
+  const rangeLabel = document.getElementById('rangeLabel');
+  const exportClipBtn = document.getElementById('exportClipBtn');
+  const clipProgressWrap = document.getElementById('clipProgressWrap');
+  const clipProgressFill = document.getElementById('clipProgressFill');
+  const clipProgressLabel = document.getElementById('clipProgressLabel');
+  const cancelClipBtn = document.getElementById('cancelClipBtn');
+  const folderBtn = document.getElementById('folderBtn');
+  const folderStatus = document.getElementById('folderStatus');
+  const folderFallback = document.getElementById('folderFallback');
+  const queuePanel = document.getElementById('queuePanel');
+  const queueList = document.getElementById('queueList');
+  const queueCount = document.getElementById('queueCount');
+  const skipBtn = document.getElementById('skipBtn');
+  const restoreBanner = document.getElementById('restoreBanner');
+  const restoreText = document.getElementById('restoreText');
+  const restoreBtn = document.getElementById('restoreBtn');
+  const discardBtn = document.getElementById('discardBtn');
+
+  function escapeHtml(s){
+    return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  const EXT = {'image/png':'png','image/jpeg':'jpg','image/webp':'webp'};
+
+  function buildFilename(seq, t, ext){
+    const num = String(seq).padStart(3,'0');
+    const tc = fmtTime(t).replace(':','m') + 's';
+    const scheme = namingSelect.value;
+    if(scheme === 'number') return num + '.' + ext;
+    if(scheme === 'timecode') return tc + '.' + ext;
+    return num + '_' + tc + '.' + ext;
+  }
+
+  formatSelect.addEventListener('change', ()=>{
+    qualityCtrl.style.display = formatSelect.value === 'image/png' ? 'none' : 'block';
+  });
+  qualitySlider.oninput = () => valQuality.textContent = parseFloat(qualitySlider.value).toFixed(2);
+
+  // ---------- destination folder ----------
+  let dirHandle = null;
+  const supportsFS = 'showDirectoryPicker' in window;
+  if(!supportsFS){
+    folderBtn.disabled = true;
+    folderBtn.style.opacity = '0.5';
+    folderFallback.style.display = 'block';
+  }
+  folderBtn.addEventListener('click', async ()=>{
+    if(!supportsFS) return;
+    try{
+      dirHandle = await window.showDirectoryPicker();
+      folderStatus.textContent = 'Saving straight to “' + dirHandle.name + '”';
+      folderStatus.classList.add('set');
+    }catch(err){
+      // user cancelled the picker — leave as-is
+    }
+  });
+
+  async function writeToFolder(name, blob){
+    try{
+      const fileHandle = await dirHandle.getFileHandle(name, {create:true});
+      const writable = await fileHandle.createWritable();
+      await writable.write(blob);
+      await writable.close();
+      return true;
+    }catch(err){
+      console.error('Could not write to folder:', err);
+      return false;
+    }
+  }
+
+  // ---------- OCR (Tesseract.js — runs locally in the browser) ----------
+  let ocrWorkerPromise = null;
+  function getOcrWorker(){
+    if(!ocrWorkerPromise){
+      ocrWorkerPromise = Tesseract.createWorker('eng');
+    }
+    return ocrWorkerPromise;
+  }
+  async function runOcr(blob){
+    const worker = await getOcrWorker();
+    const { data:{ text } } = await worker.recognize(blob);
+    return (text || '').trim();
+  }
+  function queueOcr(card){
+    card.ocrStatus = 'pending';
+    runOcr(card.blob).then(async text=>{
+      card.ocrText = text;
+      card.ocrStatus = 'done';
+      updateCardOcrUI(card);
+      persistCard(card);
+      if(dirHandle && text){
+        const base = card.filename.replace(/\.[^.]+$/, '');
+        await writeToFolder(base + '.txt', new Blob([text], {type:'text/plain'}));
+      }
+    }).catch(err=>{
+      console.error('OCR failed:', err);
+      card.ocrStatus = 'error';
+      updateCardOcrUI(card);
+      persistCard(card);
+    });
+  }
+  function updateCardOcrUI(card){
+    const el = grid.querySelector('.card[data-id="'+card.id+'"]');
+    if(!el) return;
+    const toggle = el.querySelector('.ocr-toggle');
+    const textEl = el.querySelector('.ocr-text');
+    if(!toggle || !textEl) return;
+    if(card.ocrStatus === 'pending'){
+      toggle.textContent = 'Reading text…';
+    } else if(card.ocrStatus === 'error'){
+      toggle.textContent = 'Text read failed';
+    } else {
+      const hasText = card.ocrText && card.ocrText.length > 0;
+      toggle.textContent = hasText ? 'Show text' : 'No text found';
+      toggle.disabled = !hasText;
+      textEl.textContent = card.ocrText || '';
+    }
+  }
+
+  const threshLabels = {1:'very low',2:'low',3:'low',4:'medium-low',5:'medium',6:'medium-high',7:'high',8:'high',9:'very high'};
+  // maps to a normalized diff score threshold (lower slider value = smaller number = MORE sensitive/catches more)
+  const threshScores = {1:0.006,2:0.010,3:0.015,4:0.020,5:0.028,6:0.038,7:0.05,8:0.07,9:0.10};
+
+  intervalSlider.oninput = () => valInterval.textContent = parseFloat(intervalSlider.value).toFixed(1)+'s';
+  stableSlider.oninput = () => valStable.textContent = parseFloat(stableSlider.value).toFixed(1)+'s';
+  threshSlider.oninput = () => valThresh.textContent = threshLabels[threshSlider.value];
+
+  let videoFile = null;
+  let objectUrl = null;
+  let cards = []; // {id, blob, url, time, sourceName}
+  let cardIdSeq = 1;
+  let running = false;
+  let cancelRequested = false;
+  const sourceNames = new Set();
+
+  // ---------- in/out range (restrict scanning to a section of the video) ----------
+  let rangeStart = 0;
+  let rangeEnd = null; // null = end of video
+
+  function updateRangeUI(){
+    const duration = procVideo.duration;
+    const hasDuration = isFinite(duration) && duration > 0;
+    const start = rangeStart || 0;
+    const end = (rangeEnd !== null && hasDuration) ? Math.min(rangeEnd, duration) : (hasDuration ? duration : null);
+
+    if(hasDuration){
+      const startPct = (start / duration) * 100;
+      const endPct = (end / duration) * 100;
+      rangeFill.style.left = startPct + '%';
+      rangeFill.style.width = Math.max(endPct - startPct, 0.5) + '%';
+    }
+
+    if(rangeStart === 0 && rangeEnd === null){
+      rangeLabel.innerHTML = 'Scanning the full video' + (hasDuration ? ' (<b>0:00</b> – <b>' + fmtTime(duration) + '</b>)' : '');
+      exportClipBtn.textContent = 'Export full video as clip';
+    } else {
+      rangeLabel.innerHTML = 'Scanning <b>' + fmtTime(start) + '</b> – <b>' + (end !== null ? fmtTime(end) : '…') + '</b>' + (hasDuration ? ' (' + fmtTime(Math.max(end - start, 0)) + ' of ' + fmtTime(duration) + ')' : '');
+      exportClipBtn.textContent = 'Export marked section as clip';
+    }
+  }
+
+  function resetRange(){
+    rangeStart = 0;
+    rangeEnd = null;
+    updateRangeUI();
+  }
+
+  markInBtn.addEventListener('click', ()=>{
+    if(preview.readyState < 1) return;
+    const t = preview.currentTime;
+    if(rangeEnd !== null && t >= rangeEnd){
+      rangeEnd = null; // clear an out point that no longer makes sense
+    }
+    rangeStart = t;
+    updateRangeUI();
+  });
+  markOutBtn.addEventListener('click', ()=>{
+    if(preview.readyState < 1) return;
+    const t = preview.currentTime;
+    if(t <= rangeStart){
+      alert('The out point needs to be after the in point.');
+      return;
+    }
+    rangeEnd = t;
+    updateRangeUI();
+  });
+  resetRangeBtn.addEventListener('click', resetRange);
+  rangeTrack.addEventListener('click', (e)=>{
+    const duration = procVideo.duration;
+    if(!isFinite(duration) || duration <= 0) return;
+    const rect = rangeTrack.getBoundingClientRect();
+    const frac = Math.min(Math.max((e.clientX - rect.left) / rect.width, 0), 1);
+    preview.currentTime = frac * duration;
+  });
+
+  // ---------- export the marked section back out as a video file ----------
+  // MediaRecorder records the video element's live playback — there's no
+  // universal browser API to re-encode/trim a file instantly, so this takes
+  // roughly as long as the clip itself. MP4 is used when the browser
+  // actually supports recording it; otherwise WebM (VP9/VP8 + Opus), which
+  // every modern browser supports, is the reliable fallback.
+  let clipRecorder = null;
+  let clipCancelled = false;
+
+  function pickRecorderMime(){
+    const candidates = [
+      'video/mp4;codecs=avc1,mp4a.40.2',
+      'video/mp4',
+      'video/webm;codecs=vp9,opus',
+      'video/webm;codecs=vp8,opus',
+      'video/webm',
+    ];
+    for(const c of candidates){
+      if(window.MediaRecorder && MediaRecorder.isTypeSupported(c)) return c;
+    }
+    return '';
+  }
+
+  function seekPreviewTo(t){
+    return new Promise(resolve=>{
+      const onSeeked = ()=>{ preview.removeEventListener('seeked', onSeeked); resolve(); };
+      preview.addEventListener('seeked', onSeeked);
+      preview.currentTime = t;
+    });
+  }
+
+  function setClipControlsBusy(busy){
+    exportClipBtn.disabled = busy;
+    markInBtn.disabled = busy;
+    markOutBtn.disabled = busy;
+    resetRangeBtn.disabled = busy;
+    manualCaptureBtn.disabled = busy;
+    stepBack10Btn.disabled = busy;
+    stepBack1Btn.disabled = busy;
+    stepFwd1Btn.disabled = busy;
+    stepFwd10Btn.disabled = busy;
+    runBtn.disabled = busy || !videoFile;
+    preview.classList.toggle('exporting', busy);
+  }
+
+  exportClipBtn.addEventListener('click', async ()=>{
+    if(!videoFile || running) return;
+    if(!('MediaRecorder' in window)){
+      alert("This browser doesn't support recording video clips.");
+      return;
+    }
+    const mime = pickRecorderMime();
+    if(!mime){
+      alert("This browser doesn't support any compatible video export format.");
+      return;
+    }
+
+    const duration = preview.duration;
+    const clipStart = Math.min(Math.max(rangeStart || 0, 0), duration);
+    const clipEnd = (rangeEnd !== null) ? Math.min(rangeEnd, duration) : duration;
+    if(!(clipEnd > clipStart)){
+      alert('Nothing to export — check the in/out points.');
+      return;
+    }
+
+    clipCancelled = false;
+    setClipControlsBusy(true);
+    clipProgressWrap.style.display = 'block';
+    clipProgressFill.style.width = '0%';
+    clipProgressLabel.textContent = fmtTime(0) + ' / ' + fmtTime(clipEnd - clipStart);
+
+    preview.pause();
+    await seekPreviewTo(clipStart);
+
+    const streamFn = (preview.captureStream || preview.mozCaptureStream || (()=>null)).bind(preview);
+    const stream = streamFn();
+    if(!stream){
+      alert("This browser doesn't support capturing video playback for export.");
+      setClipControlsBusy(false);
+      clipProgressWrap.style.display = 'none';
+      return;
+    }
+
+    const chunks = [];
+    const recorder = new MediaRecorder(stream, { mimeType: mime, videoBitsPerSecond: 5_000_000 });
+    clipRecorder = recorder;
+    recorder.ondataavailable = (e)=>{ if(e.data && e.data.size) chunks.push(e.data); };
+    const stopped = new Promise(resolve => { recorder.onstop = resolve; });
+
+    function onTimeUpdate(){
+      const t = preview.currentTime;
+      const pct = Math.min(100, ((t - clipStart) / (clipEnd - clipStart)) * 100);
+      clipProgressFill.style.width = pct + '%';
+      clipProgressLabel.textContent = fmtTime(Math.max(t - clipStart, 0)) + ' / ' + fmtTime(clipEnd - clipStart);
+      if(t >= clipEnd && recorder.state !== 'inactive'){
+        preview.pause();
+        recorder.stop();
+      }
+    }
+    function onEnded(){
+      if(recorder.state !== 'inactive') recorder.stop();
+    }
+    preview.addEventListener('timeupdate', onTimeUpdate);
+    preview.addEventListener('ended', onEnded);
+
+    recorder.start();
+    try{ await preview.play(); }catch(err){ console.error('Playback failed:', err); recorder.stop(); }
+
+    await stopped;
+    preview.removeEventListener('timeupdate', onTimeUpdate);
+    preview.removeEventListener('ended', onEnded);
+    clipRecorder = null;
+    clipProgressWrap.style.display = 'none';
+    setClipControlsBusy(false);
+
+    if(clipCancelled) return;
+
+    const blob = new Blob(chunks, { type: mime.split(';')[0] });
+    const ext = mime.startsWith('video/mp4') ? 'mp4' : 'webm';
+    const base = (videoFile.name || 'clip').replace(/\.[^.]+$/, '');
+    const filename = base + '_clip_' + fmtTime(clipStart).replace(':','m') + 's-' + fmtTime(clipEnd).replace(':','m') + 's.' + ext;
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+    a.click();
+  });
+
+  cancelClipBtn.addEventListener('click', ()=>{
+    if(clipRecorder && clipRecorder.state !== 'inactive'){
+      clipCancelled = true;
+      preview.pause();
+      clipRecorder.stop();
+    }
+  });
+
+  // ---------- persistence (IndexedDB) — survives an accidental refresh/close ----------
+  const DB_NAME = 'vkeyframe';
+  const DB_VERSION = 1;
+  let dbPromise = null;
+  function openDb(){
+    if(!('indexedDB' in window)) return Promise.reject(new Error('IndexedDB unavailable'));
+    if(dbPromise) return dbPromise;
+    dbPromise = new Promise((resolve, reject)=>{
+      const req = indexedDB.open(DB_NAME, DB_VERSION);
+      req.onupgradeneeded = ()=>{
+        const db = req.result;
+        if(!db.objectStoreNames.contains('cards')) db.createObjectStore('cards', {keyPath:'id'});
+      };
+      req.onsuccess = ()=> resolve(req.result);
+      req.onerror = ()=> reject(req.error);
+    });
+    return dbPromise;
+  }
+  async function idbPut(value){
+    try{
+      const db = await openDb();
+      await new Promise((resolve, reject)=>{
+        const tx = db.transaction('cards', 'readwrite');
+        tx.objectStore('cards').put(value);
+        tx.oncomplete = resolve;
+        tx.onerror = ()=> reject(tx.error);
+      });
+    }catch(err){ console.error('Persist failed:', err); }
+  }
+  async function idbDelete(id){
+    try{
+      const db = await openDb();
+      await new Promise((resolve, reject)=>{
+        const tx = db.transaction('cards', 'readwrite');
+        tx.objectStore('cards').delete(id);
+        tx.oncomplete = resolve;
+        tx.onerror = ()=> reject(tx.error);
+      });
+    }catch(err){ console.error('Delete failed:', err); }
+  }
+  async function idbGetAll(){
+    try{
+      const db = await openDb();
+      return await new Promise((resolve, reject)=>{
+        const tx = db.transaction('cards', 'readonly');
+        const req = tx.objectStore('cards').getAll();
+        req.onsuccess = ()=> resolve(req.result);
+        req.onerror = ()=> reject(req.error);
+      });
+    }catch(err){ console.error('Read failed:', err); return []; }
+  }
+  async function idbClear(){
+    try{
+      const db = await openDb();
+      await new Promise((resolve, reject)=>{
+        const tx = db.transaction('cards', 'readwrite');
+        tx.objectStore('cards').clear();
+        tx.oncomplete = resolve;
+        tx.onerror = ()=> reject(tx.error);
+      });
+    }catch(err){ console.error('Clear failed:', err); }
+  }
+  function persistCard(card){
+    idbPut({
+      id: card.id, blob: card.blob, time: card.time, filename: card.filename,
+      savedToFolder: card.savedToFolder, ocrText: card.ocrText, ocrStatus: card.ocrStatus,
+      sourceName: card.sourceName
+    });
+  }
+
+  // ---------- batch queue ----------
+  let queue = []; // {id, file} — waiting videos only; the tray shows whatever is currently active
+  let queueIdSeq = 1;
+
+  function renderQueue(){
+    queuePanel.style.display = queue.length ? 'block' : 'none';
+    queueCount.textContent = queue.length ? '(' + queue.length + ' waiting)' : '';
+    skipBtn.style.display = (running && queue.length) ? 'inline-flex' : 'none';
+    queueList.innerHTML = '';
+    queue.forEach(q=>{
+      const row = document.createElement('div');
+      row.className = 'queue-item';
+      row.innerHTML = `<span class="qdot"></span><span class="qname"></span><span class="qstatus">queued</span><button class="qremove" type="button">&times;</button>`;
+      row.querySelector('.qname').textContent = q.file.name;
+      row.querySelector('.qremove').addEventListener('click', ()=>{
+        queue = queue.filter(x=>x.id !== q.id);
+        renderQueue();
+      });
+      queueList.appendChild(row);
+    });
+  }
+
+  function enqueueFiles(files){
+    const vids = files.filter(f=>f.type.startsWith('video/'));
+    if(vids.length === 0) return;
+    if(!videoFile){
+      const first = vids.shift();
+      loadFile(first);
+    }
+    vids.forEach(f=> queue.push({id:queueIdSeq++, file:f}));
+    renderQueue();
+  }
+
+  function advanceQueue(){
+    if(queue.length === 0) return false;
+    const next = queue.shift();
+    renderQueue();
+    loadFile(next.file);
+    return true;
+  }
+
+  // hidden processing elements
+  const procVideo = document.createElement('video');
+  procVideo.muted = true; procVideo.playsInline = true;
+  const smallCanvas = document.createElement('canvas');
+  smallCanvas.width = 48; smallCanvas.height = 27;
+  const smallCtx = smallCanvas.getContext('2d', {willReadFrequently:true});
+  const fullCanvas = document.createElement('canvas');
+  const fullCtx = fullCanvas.getContext('2d');
+  const liveCtx = liveCanvas.getContext('2d');
+
+  function fmtTime(s){
+    if(!isFinite(s)) return '0:00';
+    const m = Math.floor(s/60), sec = Math.floor(s%60);
+    return m+':'+String(sec).padStart(2,'0');
+  }
+  function fmtBytes(b){
+    if(b < 1024*1024) return (b/1024).toFixed(0)+' KB';
+    return (b/1024/1024).toFixed(1)+' MB';
+  }
+
+  // ---------- file loading ----------
+  ['dragenter','dragover'].forEach(ev => tray.addEventListener(ev, e=>{
+    e.preventDefault(); tray.classList.add('drag');
+  }));
+  ['dragleave','drop'].forEach(ev => tray.addEventListener(ev, e=>{
+    e.preventDefault(); tray.classList.remove('drag');
+  }));
+  tray.addEventListener('drop', e=>{
+    const files = Array.from(e.dataTransfer.files || []);
+    enqueueFiles(files);
+  });
+  tray.addEventListener('click', e=>{
+    if(trayFilled.style.display !== 'none') return;
+    fileInput.click();
+  });
+  fileInput.addEventListener('change', e=>{
+    const files = Array.from(e.target.files || []);
+    if(forceReplaceNext && files.length){
+      forceReplaceNext = false;
+      const first = files.shift();
+      loadFile(first);
+      if(files.length) enqueueFiles(files);
+    } else {
+      enqueueFiles(files);
+    }
+  });
+  let forceReplaceNext = false;
+  swapBtn.addEventListener('click', e=>{
+    e.stopPropagation();
+    forceReplaceNext = true;
+    fileInput.value = '';
+    fileInput.click();
+  });
+
+  function loadFile(f){
+    if(!f.type.startsWith('video/')){
+      alert('Please choose a video file.');
+      return;
+    }
+    if(clipRecorder && clipRecorder.state !== 'inactive'){
+      clipCancelled = true;
+      clipRecorder.stop();
+    }
+    videoFile = f;
+    sourceNames.add(f.name);
+    if(objectUrl) URL.revokeObjectURL(objectUrl);
+    objectUrl = URL.createObjectURL(f);
+    preview.src = objectUrl;
+    procVideo.src = objectUrl;
+    fname.textContent = f.name;
+    fdetail.textContent = fmtBytes(f.size);
+    trayEmpty.style.display = 'none';
+    trayFilled.style.display = 'block';
+    tray.classList.add('has-video');
+    runBtn.disabled = false;
+    runBtn.textContent = 'Start scanning';
+    resetRange();
+    const ytHint = document.getElementById('ytHint');
+    if(ytHint) ytHint.style.display = 'none';
+
+    procVideo.addEventListener('loadedmetadata', ()=>{
+      fullCanvas.width = procVideo.videoWidth;
+      fullCanvas.height = procVideo.videoHeight;
+      fdetail.textContent = fmtBytes(f.size) + ' · ' + procVideo.videoWidth + '×' + procVideo.videoHeight + ' · ' + fmtTime(procVideo.duration) + ' long';
+      updateRangeUI();
+    }, {once:true});
+  }
+
+  manualCaptureBtn.addEventListener('click', ()=>{
+    if(preview.readyState < 1){
+      alert('Give the video a moment to load, then try again.');
+      return;
+    }
+    if(fullCanvas.width === 0){
+      fullCanvas.width = preview.videoWidth;
+      fullCanvas.height = preview.videoHeight;
+    }
+    captureCard(preview.currentTime, preview);
+  });
+
+  // ---------- frame-accurate stepping ----------
+  function stepFrames(n){
+    if(preview.readyState < 1) return;
+    const fps = parseFloat(fpsInput.value);
+    const frameDur = (fps && fps > 0) ? (1 / fps) : (1 / 30);
+    const duration = isFinite(preview.duration) ? preview.duration : Infinity;
+    preview.pause();
+    preview.currentTime = Math.min(Math.max(preview.currentTime + n * frameDur, 0), duration);
+  }
+  stepBack10Btn.addEventListener('click', ()=> stepFrames(-10));
+  stepBack1Btn.addEventListener('click', ()=> stepFrames(-1));
+  stepFwd1Btn.addEventListener('click', ()=> stepFrames(1));
+  stepFwd10Btn.addEventListener('click', ()=> stepFrames(10));
+
+  // ---------- diffing ----------
+  function grabSmall(){
+    smallCtx.drawImage(procVideo, 0, 0, smallCanvas.width, smallCanvas.height);
+    return smallCtx.getImageData(0,0,smallCanvas.width,smallCanvas.height).data;
+  }
+  function diffScore(a, b){
+    if(!a || !b) return 1;
+    let sum = 0;
+    const n = a.length;
+    for(let i=0;i<n;i+=4){
+      sum += Math.abs(a[i]-b[i]) + Math.abs(a[i+1]-b[i+1]) + Math.abs(a[i+2]-b[i+2]);
+    }
+    return sum / (n/4) / (255*3);
+  }
+  // Cheap per-frame characteristics computed on the same downsampled sample
+  // used for diffing — lets the scan skip blank/solid frames or restrict
+  // itself to single-toned content (true grayscale, but also sepia,
+  // cyanotype, or a chalkboard-blue tint — anything dominated by one hue,
+  // regardless of how saturated that hue is).
+  function frameStats(sample){
+    const n = sample.length / 4;
+    let lumaSum = 0, lumaSumSq = 0;
+    let huePixelCount = 0, sumCos = 0, sumSin = 0;
+    for(let i=0;i<sample.length;i+=4){
+      const r = sample[i], g = sample[i+1], b = sample[i+2];
+      const luma = 0.299*r + 0.587*g + 0.114*b;
+      lumaSum += luma;
+      lumaSumSq += luma*luma;
+
+      const max = Math.max(r,g,b), min = Math.min(r,g,b);
+      const delta = max - min;
+      const sat = max === 0 ? 0 : delta / max;
+      // Only pixels with real color (and not near-black/near-white, where
+      // hue is unstable) count toward the dominant-hue measurement.
+      if(sat > 0.12 && luma > 15 && luma < 245){
+        let hue;
+        if(delta === 0) hue = 0;
+        else if(max === r) hue = ((g - b) / delta) % 6;
+        else if(max === g) hue = (b - r) / delta + 2;
+        else hue = (r - g) / delta + 4;
+        hue *= 60;
+        if(hue < 0) hue += 360;
+        const rad = hue * Math.PI / 180;
+        sumCos += Math.cos(rad);
+        sumSin += Math.sin(rad);
+        huePixelCount++;
+      }
+    }
+    const lumaMean = lumaSum / n;
+    const variance = (lumaSumSq / n) - (lumaMean * lumaMean);
+    const stdDev = Math.sqrt(Math.max(variance, 0));
+    const coloredFraction = huePixelCount / n;
+    // 1 = every colored pixel shares the same hue (single-toned), 0 = hues
+    // are scattered all over the wheel (genuinely multicolored).
+    const hueConcentration = huePixelCount > 0
+      ? Math.sqrt(sumCos*sumCos + sumSin*sumSin) / huePixelCount
+      : 1;
+    return { stdDev, coloredFraction, hueConcentration };
+  }
+  const BLANK_STDDEV_THRESHOLD = 8;          // below this, a frame reads as near-blank/solid
+  const MONO_COLORED_FRACTION_THRESHOLD = 0.03; // below this, treat as plain grayscale
+  const MONO_HUE_CONCENTRATION_THRESHOLD = 0.6; // above this, one hue dominates the frame
+  function seekTo(t){
+    return new Promise(resolve=>{
+      const onSeeked = ()=>{ procVideo.removeEventListener('seeked', onSeeked); resolve(); };
+      procVideo.addEventListener('seeked', onSeeked);
+      procVideo.currentTime = Math.min(t, procVideo.duration - 0.05);
+    });
+  }
+
+  async function captureCard(t, sourceEl){
+    const source = sourceEl || procVideo;
+    fullCtx.drawImage(source, 0, 0, fullCanvas.width, fullCanvas.height);
+    const mime = formatSelect.value;
+    const quality = mime === 'image/png' ? undefined : parseFloat(qualitySlider.value);
+    const blob = await new Promise(res => fullCanvas.toBlob(res, mime, quality));
+    const url = URL.createObjectURL(blob);
+    const ext = EXT[mime] || 'png';
+    const filename = buildFilename(cardIdSeq, t, ext);
+    const card = { id: cardIdSeq++, blob, url, time: t, filename, savedToFolder:false, ocrText:null, ocrStatus:'off', sourceName: videoFile ? videoFile.name : 'unknown' };
+
+    if(dirHandle){
+      card.savedToFolder = await writeToFolder(filename, blob);
+    }
+
+    cards.push(card);
+    sourceNames.add(card.sourceName);
+    persistCard(card);
+
+    if(ocrToggle.checked){
+      card.ocrStatus = 'pending';
+    }
+    renderCard(card, true);
+    updateGalleryMeta();
+
+    if(ocrToggle.checked){
+      queueOcr(card);
+    }
+  }
+
+  function renderCard(card, animate){
+    emptyState.style.display = 'none';
+    exportRow.style.display = 'flex';
+    const el = document.createElement('div');
+    el.className = 'card';
+    el.dataset.id = card.id;
+    if(animate){ el.style.opacity = '0'; el.style.transform = 'translateY(6px)'; }
+    el.innerHTML = `
+      <span class="pin"></span>
+      <img src="${card.url}" alt="Captured card at ${fmtTime(card.time)}">
+      <div class="tag">
+        <span class="ts">${fmtTime(card.time)}${card.savedToFolder ? ' · saved' : ''}${sourceNames.size > 1 ? ' · ' + escapeHtml(card.sourceName) : ''}</span>
+        <button class="remove" title="Remove">&times;</button>
+      </div>
+      ${card.ocrStatus !== 'off' ? '<button class="ocr-toggle" type="button">Reading text…</button><div class="ocr-text"></div>' : ''}`;
+    el.querySelector('img').addEventListener('click', ()=> openLightbox(card));
+    el.querySelector('.remove').addEventListener('click', (e)=>{
+      e.stopPropagation();
+      cards = cards.filter(c=>c.id !== card.id);
+      idbDelete(card.id);
+      el.remove();
+      updateGalleryMeta();
+    });
+    const ocrToggleBtn = el.querySelector('.ocr-toggle');
+    if(ocrToggleBtn){
+      ocrToggleBtn.addEventListener('click', ()=>{
+        el.querySelector('.ocr-text').classList.toggle('open');
+      });
+    }
+    grid.appendChild(el);
+    if(animate){
+      requestAnimationFrame(()=>{
+        el.style.transition = 'opacity .3s ease, transform .3s ease';
+        el.style.opacity = '1'; el.style.transform = 'translateY(0)';
+      });
+    }
+  }
+
+  function updateGalleryMeta(){
+    galleryCount.textContent = cards.length + (cards.length===1 ? ' card' : ' cards');
+    if(cards.length === 0){
+      emptyState.style.display = 'block';
+      exportRow.style.display = 'none';
+    }
+  }
+
+  function openLightbox(card){
+    lbImg.src = card.url;
+    lbMeta.textContent = 'Captured at ' + fmtTime(card.time) + ' in source video';
+    lightbox.classList.add('open');
+  }
+  lbClose.onclick = ()=> lightbox.classList.remove('open');
+  lightbox.addEventListener('click', e=>{ if(e.target === lightbox) lightbox.classList.remove('open'); });
+
+  // ---------- scan loop ----------
+  runBtn.addEventListener('click', startScan);
+  stopBtn.addEventListener('click', ()=>{ cancelRequested = true; });
+  let skipRequested = false;
+  skipBtn.addEventListener('click', ()=>{
+    skipRequested = true;
+    cancelRequested = true;
+  });
+
+  async function startScan(){
+    if(!videoFile || running) return;
+    if(clipRecorder){
+      alert('Please wait for the clip export to finish first.');
+      return;
+    }
+    running = true;
+    cancelRequested = false;
+    skipRequested = false;
+    runBtn.style.display = 'none';
+    stopBtn.style.display = 'inline-flex';
+    progressWrap.style.display = 'block';
+    liveRow.style.display = 'flex';
+    exportClipBtn.disabled = true;
+    renderQueue();
+
+    if(procVideo.readyState < 1 || isNaN(procVideo.duration)){
+      liveStatus.textContent = 'loading video…';
+      await new Promise(res=>{
+        const h = ()=>{ procVideo.removeEventListener('loadedmetadata', h); res(); };
+        procVideo.addEventListener('loadedmetadata', h);
+      });
+    }
+
+    const interval = parseFloat(intervalSlider.value);
+    const stableNeeded = parseFloat(stableSlider.value);
+    const threshold = threshScores[threshSlider.value];
+
+    const duration = procVideo.duration;
+    const scanStart = Math.min(Math.max(rangeStart || 0, 0), duration);
+    const scanEnd = (rangeEnd !== null) ? Math.min(rangeEnd, duration) : duration;
+    let t = scanStart;
+    let lastSample = null;
+    let stableSince = null;
+    let lastCapturedSample = null;
+    let capturedAtCurrentStill = false;
+
+    while(t < scanEnd){
+      if(cancelRequested) break;
+      await seekTo(t);
+      const sample = grabSmall();
+
+      // draw live preview
+      liveCtx.drawImage(procVideo, 0, 0, liveCanvas.width, liveCanvas.height);
+
+      const changeFromLast = diffScore(sample, lastSample);
+      if(changeFromLast > threshold){
+        // scene changed — reset stability window
+        stableSince = t;
+        capturedAtCurrentStill = false;
+        liveStatus.innerHTML = 'change detected <b>' + fmtTime(t) + '</b>';
+      } else {
+        const heldFor = t - (stableSince===null ? t : stableSince);
+        if(!capturedAtCurrentStill && heldFor >= stableNeeded){
+          const stats = frameStats(sample);
+          const isBlank = skipBlankToggle.checked && stats.stdDev < BLANK_STDDEV_THRESHOLD;
+          const isSingleToned = stats.coloredFraction < MONO_COLORED_FRACTION_THRESHOLD || stats.hueConcentration >= MONO_HUE_CONCENTRATION_THRESHOLD;
+          const isTooColorful = monoOnlyToggle.checked && !isSingleToned;
+
+          if(isBlank){
+            liveStatus.innerHTML = 'skipped — near-blank frame';
+            capturedAtCurrentStill = true;
+          } else if(isTooColorful){
+            liveStatus.innerHTML = 'skipped — not monochrome';
+            capturedAtCurrentStill = true;
+          } else {
+            const changeFromCaptured = diffScore(sample, lastCapturedSample);
+            if(changeFromCaptured > threshold || lastCapturedSample===null){
+              await captureCard(t);
+              lastCapturedSample = sample;
+              liveStatus.innerHTML = '<b>captured</b> at ' + fmtTime(t);
+            } else {
+              liveStatus.innerHTML = 'holding — already have this one';
+            }
+            capturedAtCurrentStill = true;
+          }
+        } else if(!capturedAtCurrentStill){
+          liveStatus.innerHTML = 'holding steady… ' + heldFor.toFixed(1) + 's / ' + stableNeeded.toFixed(1) + 's';
+        }
+      }
+
+      lastSample = sample;
+      const pct = Math.min(100, ((t - scanStart)/(scanEnd - scanStart))*100);
+      progressFill.style.width = pct + '%';
+      progressPct.textContent = Math.round(pct) + '%';
+      progressLabel.textContent = fmtTime(t) + ' / ' + fmtTime(scanEnd);
+
+      t += interval;
+      // yield to UI
+      await new Promise(r=>setTimeout(r, 0));
+    }
+
+    progressFill.style.width = '100%';
+    progressPct.textContent = '100%';
+    progressLabel.textContent = fmtTime(scanEnd) + ' / ' + fmtTime(scanEnd);
+    running = false;
+    runBtn.style.display = 'inline-flex';
+    stopBtn.style.display = 'none';
+    exportClipBtn.disabled = false;
+
+    const wasSkip = skipRequested;
+    const wasStopped = cancelRequested && !wasSkip;
+    skipRequested = false;
+
+    if(!wasStopped && queue.length){
+      liveStatus.textContent = wasSkip ? 'skipped — moving to next video…' : 'scan complete — moving to next video…';
+      advanceQueue();
+      setTimeout(startScan, 250);
+    } else {
+      liveStatus.textContent = wasStopped ? 'stopped' : 'scan complete';
+      runBtn.textContent = 'Scan again';
+      renderQueue();
+    }
+  }
+
+  // ---------- export ----------
+  function groupBySource(){
+    const groups = {};
+    const order = [];
+    cards.slice().sort((a,b)=>a.time-b.time).forEach(c=>{
+      if(!groups[c.sourceName]){ groups[c.sourceName] = []; order.push(c.sourceName); }
+      groups[c.sourceName].push(c);
+    });
+    return { groups, order };
+  }
+
+  downloadBtn.addEventListener('click', async ()=>{
+    if(cards.length === 0) return;
+    downloadBtn.disabled = true;
+    downloadBtn.textContent = 'Zipping…';
+    const zip = new JSZip();
+    const rootFolder = zip.folder('cards');
+    const { groups, order } = groupBySource();
+    const multi = order.length > 1;
+    const manifestLines = ['# Captured cards', ''];
+    if(!multi) manifestLines.push('Source: ' + order[0], '');
+    order.forEach(src=>{
+      const folder = multi ? rootFolder.folder(src.replace(/\.[^.]+$/, '')) : rootFolder;
+      if(multi) manifestLines.push('## ' + src, '');
+      groups[src].forEach(c=>{
+        folder.file(c.filename, c.blob);
+        let line = '- `'+c.filename+'` — captured at ' + fmtTime(c.time);
+        if(c.ocrText){
+          const base = c.filename.replace(/\.[^.]+$/, '');
+          folder.file(base + '.txt', c.ocrText);
+          line += '\n  > ' + c.ocrText.slice(0,140).replace(/\n/g,' ') + (c.ocrText.length>140 ? '…' : '');
+        }
+        manifestLines.push(line);
+      });
+      if(multi) manifestLines.push('');
+    });
+    zip.file('manifest.md', manifestLines.join('\n'));
+    const content = await zip.generateAsync({type:'blob'});
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(content);
+    a.download = (multi ? 'batch' : order[0].replace(/\.[^.]+$/,'')) + '_cards.zip';
+    a.click();
+    downloadBtn.disabled = false;
+    downloadBtn.textContent = 'Download collection (.zip)';
+  });
+
+  function blobToDataUrl(blob){
+    return new Promise((resolve, reject)=>{
+      const reader = new FileReader();
+      reader.onload = ()=> resolve(reader.result);
+      reader.onerror = reject;
+      reader.readAsDataURL(blob);
+    });
+  }
+
+  // jsPDF only reliably decodes PNG/JPEG. WebP (and anything else) needs
+  // to be redrawn onto a canvas and re-exported first, or addImage silently
+  // mis-renders it (shows up as a corrupted/cropped-looking page).
+  const pdfConvertCanvas = document.createElement('canvas');
+  const pdfConvertCtx = pdfConvertCanvas.getContext('2d');
+  async function toPdfSafeImage(blob, filename){
+    const ext = (filename.split('.').pop() || '').toLowerCase();
+    const url = URL.createObjectURL(blob);
+    try{
+      const img = await new Promise((res, rej)=>{
+        const im = new Image();
+        im.onload = ()=> res(im);
+        im.onerror = rej;
+        im.src = url;
+      });
+      const dims = { w: img.naturalWidth, h: img.naturalHeight };
+      if(ext === 'png' || ext === 'jpg' || ext === 'jpeg'){
+        const dataUrl = await blobToDataUrl(blob);
+        return { dataUrl, dims, fmt: ext === 'png' ? 'PNG' : 'JPEG' };
+      }
+      // webp or anything else: redraw to canvas, export as PNG
+      pdfConvertCanvas.width = dims.w;
+      pdfConvertCanvas.height = dims.h;
+      pdfConvertCtx.drawImage(img, 0, 0, dims.w, dims.h);
+      const dataUrl = pdfConvertCanvas.toDataURL('image/png');
+      return { dataUrl, dims, fmt: 'PNG' };
+    } finally {
+      URL.revokeObjectURL(url);
+    }
+  }
+
+  downloadPdfBtn.addEventListener('click', async ()=>{
+    if(cards.length === 0) return;
+    downloadPdfBtn.disabled = true;
+    downloadPdfBtn.textContent = 'Building PDF…';
+    try{
+      const { jsPDF } = window.jspdf;
+      const pageWidth = 612; // US Letter width in pt
+      const margin = 36;
+      const contentWidth = pageWidth - margin*2;
+      const lineHeight = 13;
+      const fitPage = pdfFitPage.checked;
+      const fixedPageHeight = 792; // US Letter height in pt
+      const maxImgHeightFree = 500; // cap when pages auto-size per image
+      const doc = new jsPDF({ unit:'pt', format:[pageWidth, fitPage ? fixedPageHeight : 792] });
+      let firstPage = true;
+
+      const { groups, order } = groupBySource();
+      const multi = order.length > 1;
+
+      for(const src of order){
+        if(multi){
+          const dividerH = fitPage ? fixedPageHeight : 300;
+          if(!firstPage){
+            doc.addPage([pageWidth, dividerH]);
+          } else {
+            if(doc.internal.pageSize.setWidth) doc.internal.pageSize.setWidth(pageWidth);
+            if(doc.internal.pageSize.setHeight) doc.internal.pageSize.setHeight(dividerH);
+          }
+          firstPage = false;
+          doc.setFontSize(20);
+          doc.text(src, margin, dividerH/2, {maxWidth: contentWidth});
+        }
+        for(const c of groups[src]){
+          const { dataUrl, dims, fmt } = await toPdfSafeImage(c.blob, c.filename);
+
+          doc.setFontSize(9);
+          const captionLine = fmtTime(c.time) + (multi ? '  ·  ' + src : '') + '  ·  ' + c.filename;
+          const ocrLines = c.ocrText ? doc.splitTextToSize(c.ocrText, contentWidth) : [];
+          const footerH = 22 + (ocrLines.length ? ocrLines.length * lineHeight + 10 : 0);
+
+          let drawW, drawH, pageHeight, imgY;
+          if(fitPage){
+            // Fixed Letter page every time; scale the image to fit fully
+            // inside the remaining box (both width and height bounded) so
+            // nothing is ever cropped, regardless of orientation.
+            pageHeight = fixedPageHeight;
+            const maxW = contentWidth;
+            const maxH = fixedPageHeight - margin*2 - footerH;
+            const scale = Math.min(maxW / dims.w, maxH / dims.h);
+            drawW = dims.w * scale;
+            drawH = dims.h * scale;
+            imgY = margin + (maxH - drawH)/2;
+          } else {
+            drawW = contentWidth;
+            drawH = drawW * (dims.h / dims.w);
+            if(drawH > maxImgHeightFree){
+              drawH = maxImgHeightFree;
+              drawW = drawH * (dims.w / dims.h);
+            }
+            pageHeight = margin*2 + drawH + footerH;
+            imgY = margin;
+          }
+
+          if(!firstPage) doc.addPage([pageWidth, pageHeight]);
+          else {
+            if(doc.internal.pageSize.setWidth) doc.internal.pageSize.setWidth(pageWidth);
+            if(doc.internal.pageSize.setHeight) doc.internal.pageSize.setHeight(pageHeight);
+          }
+          firstPage = false;
+
+          const imgX = margin + (contentWidth - drawW)/2;
+          doc.addImage(dataUrl, fmt, imgX, imgY, drawW, drawH);
+
+          doc.setFontSize(9);
+          doc.setTextColor(90,90,90);
+          doc.text(captionLine, margin, imgY + drawH + 16);
+
+          if(ocrLines.length){
+            doc.setFontSize(9);
+            doc.setTextColor(40,40,40);
+            doc.text(ocrLines, margin, imgY + drawH + 34);
+          }
+        }
+      }
+
+      doc.save((multi ? 'batch' : order[0].replace(/\.[^.]+$/,'')) + '_cards.pdf');
+    }catch(err){
+      console.error('PDF export failed:', err);
+      alert('Could not build the PDF — check the console for details.');
+    }
+    downloadPdfBtn.disabled = false;
+    downloadPdfBtn.textContent = 'Download as PDF';
+  });
+
+  clearBtn.addEventListener('click', ()=>{
+    if(!confirm('Remove all captured cards?')) return;
+    cards.forEach(c=>URL.revokeObjectURL(c.url));
+    cards = [];
+    grid.innerHTML = '';
+    updateGalleryMeta();
+    idbClear();
+  });
+
+  // ---------- restore a previous in-progress session ----------
+  async function tryRestoreSession(){
+    const saved = await idbGetAll();
+    if(!saved || saved.length === 0) return;
+    saved.sort((a,b)=>a.id-b.id);
+    restoreText.textContent = 'Found ' + saved.length + (saved.length===1 ? ' card' : ' cards') + ' from a previous session — pick up where you left off?';
+    restoreBanner.style.display = 'flex';
+
+    restoreBtn.onclick = ()=>{
+      saved.forEach(rec=>{
+        const url = URL.createObjectURL(rec.blob);
+        const card = {
+          id: rec.id, blob: rec.blob, url, time: rec.time, filename: rec.filename,
+          savedToFolder: rec.savedToFolder, ocrText: rec.ocrText,
+          ocrStatus: rec.ocrStatus === 'pending' ? 'off' : rec.ocrStatus,
+          sourceName: rec.sourceName
+        };
+        cards.push(card);
+        sourceNames.add(card.sourceName);
+        cardIdSeq = Math.max(cardIdSeq, card.id + 1);
+      });
+      cards.forEach(card => renderCard(card, false));
+      updateGalleryMeta();
+      restoreBanner.style.display = 'none';
+    };
+    discardBtn.onclick = ()=>{
+      idbClear();
+      restoreBanner.style.display = 'none';
+    };
+  }
+  tryRestoreSession();
+
+})();
+</script>
+</body>
+</html>
