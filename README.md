@@ -2,7 +2,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./branding/geobees-labs-logo-on-dark.png">
-  <source media="(prefers-color-scheme: light)" srcset="./branding/geobees-labs-logo.png">
+  <source media="(prefers-color-scheme: light)" srcset="./branding/geobees-labs-logo_1.png">
   <img alt="Geobees Labs" src="./branding/geobees-labs-logo.png" width="220">
 </picture>
 
